@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	transition: 0.4s;
+}
+
+body{
+	background: #06090f;
+	font-family: 'Roboto Mono', sans-serif;
+}
+
+.nav-bar{
+	background: #161b22;
+	width: 100%;
+	height: 50px;
+	padding: 12px;
+	position: fixed;
+	display: flex;
+	align-items: center;
+	top: 0;
+	z-index: 1;
+}
+
+.logo-cont{
+	background: #FFF;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+}
+
+.logo-cont img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.nav-bar a{
+	color: #FFF;
+	text-decoration: none;
+	margin-left: 2%;
+}
+
+a.active{
+	color: #999;
+}
+
+.users{
+	padding: 6px;
+	width: 50%;
+	margin: auto;
+	margin-top: 60px;
+}
+
+.title{
+	color: white;
+	text-align: center;
+	padding: 12px;
+}
+
+.single-user{
+	background: #161b22;
+	margin: 1%;
+	list-style-type: none;
+	color: #999;
+	padding: 4px;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.img-cont{
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+}
+
+.img-cont img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 100%;
+}
+
+.names{
+	margin-left: 1%;
+	line-height: 14px;
+}
+
+.names p{
+	color: #FFF;
+}
+
+.names span{
+	font-size: 0.7rem;
+	margin-left: 4%;
+}
+
+a.btn{
+	background: none;
+	display: block;
+	height: 35px;
+	width: 13%;
+	position: absolute;
+	right: 2%;
+	cursor: pointer;
+	border: 1px solid #777;
+	border-radius: 4px;
+
+	color: #999;
+	text-decoration: none;
+	text-align: center;
+	line-height: 32px;
+}
+
+
+.btn:hover{
+	background: #333;
+}
+
+@media only screen and (max-width: 760px) {
+	.users{
+		width: 100%;
+	}
+}
