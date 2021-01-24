@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	transition: 0.4s;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	background: #06090f;
+	font-family: 'Roboto Mono', sans-serif;
+}
+
+.nav-bar{
+	background: #161b22;
+	width: 100%;
+	height: 50px;
+	padding: 12px;
+	position: fixed;
+	display: flex;
+	align-items: center;
+	top: 0;
+	z-index: 1;
+}
+
+.logo{
+	width: 30px;
+	position: absolute;
+	right: 2%;
+}
+
+.nav-bar a{
+	color: #FFF;
+	text-decoration: none;
+	margin-left: 14px;
+}
+
+.title{
+	color: white;
+	text-align: center;
+	padding: 12px;
+}
+
+.section{
+	background: none;
+	color: #999;
+	padding: 12px;
+	margin-top: 100px;
+	padding: 12px;
+}
+
+.welcome-section{
+	width: 100%;
+	clear: both;
+	display: table;
+}
+
+.js-cont{
+	width: 400px;
+	height: 400px;
+	float: left;
+}
+
+.js-cont img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.me-desc{
+	width: 45%;
+	float: left;
+	margin-top: 5%;
+	padding-left: 2%;
+}
+
+.center{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.clearFix{
+	display: table;
+	clear: both;
+	content: '';
+}
+
+.projects{
+	width: 100%;
+	height: 100px;
+	padding: 12px;
+	margin-top: 2%;
+}
+
+.single-project{
+	width: 30%;
+	height: 420px;
+	background: none;
+	border: 1px solid #222;
+	float: left;
+	margin: 1% 1%;
+	position: relative;
+}
+
+.single-why{
+	width: 47%;
+	height: 0 auto;
+	background: none;
+	border: 1px solid #222;
+	float: left;
+	margin: 1% 1%;
+	position: relative;
+	padding: 12px;
+}
+
+.more-tit{
+	padding: 5px;
+	text-align: center;
+	border-bottom: 1px solid #222;
+	margin-bottom: 4%;
+}
+
+.bg-img-why{
+	background-image: url('why.png');
+	width: 40px;
+	height: 40px;
+	display: block;
+}
+
+.project-profile{
+	width: 100%;
+	height: 200px;
+}
+
+.project-profile img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.pard-4{
+	padding: 4px;
+}
+
+.btn-view{
+	display: block;
+	text-align: center;
+	width: 50%;
+	border: 1px solid #222;
+	padding: 4px;
+	text-decoration: none;
+	color: #888;
+	border-radius: 50px;
+
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 2%;
+}
+
+.btn-view:hover{
+	background: #222;
+}
+
+footer{
+	color: #444;
+	width: 100%;
+	padding: 12px;
+}
+
+@media only screen and (max-width: 768px){
+	.me-desc{width: 100%;}
+	.js-cont{width: 100%;}
+	.intro{text-align: center;}
+	.single-project, .single-why{
+		left: auto; 
+		right: auto; 
+		width: 98%;
+		margin-top: 4%;
+	}
+}
