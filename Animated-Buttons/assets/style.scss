@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	transition: 0.4s;
+}
+
+$color: #1094d2;
+
+body {
+	background: $color;
+	font-family: Roboto, sans-serif;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	min-height: 100vh;
+	font-size: 24px;
+}
+
+.follow_btn,
+.share_btn,
+.save_button {
+	outline: none;
+	border: none;
+	background-color: #f6f6f6;
+	width: 150px;
+	height: 40px;
+	font-weight: bold;
+	font-size: 14px;
+	cursor: pointer;
+	color: lighten(#000000, 30%);
+	box-shadow: inset 0 0 0 0 #000;
+}
+
+.follow_btn:hover {
+	box-shadow: inset 150px 0 0 0 $color;
+	color: #f6f6f6;
+	border: 2px solid #f6f6f6;
+}
+
+.share_btn,
+.save_button {
+	border: 2px solid #f6f6f6;
+	background-color: $color;
+	color: #f6f6f6;
+	position: relative;
+	z-index: 1;
+}
+
+.share_btn::before {
+	background-color: #f6f6f6;
+	position: absolute;
+	top: 50%;
+	bottom: 50%;
+	left: 50%;
+	right: 50%;
+	height: 0;
+	border-radius: 100%;
+
+	content: "";
+	transition: ease 0.7s;
+}
+
+.share_btn:hover,
+.save_button:hover {
+	color: $color;
+	border: none;
+}
+
+.share_btn:hover::before {
+	right: 0;
+	left: 0;
+	height: 40px;
+	bottom: 0;
+	top: 0;
+	border-radius: 0;
+	z-index: -1;
+}
+
+.save_button::before {
+	background-color: #f6f6f6;
+	display: block;
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 40px;
+	content: "";
+	transition: ease 0.4s;
+	border-top-left-radius: 50%;
+	border-bottom-left-radius: 50%;
+}
+
+.save_button:hover::before {
+	width: 100%;
+	border-radius: 0;
+	z-index: -1;
+}
