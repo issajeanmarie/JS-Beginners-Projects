@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>3D Logos</title>
+		<link rel="icon" href="assets/logo.png" />
+		<link rel="stylesheet" href="assets/style.min.css" />
+	</head>
+	<body>
+		<div class="card">
+			<div class="card_content">
+				<div class="front">
+					<img class="card_title" src="assets/logo.png" width="200" />
+					<p class="card_title codes">codes.study</p>
+				</div>
+
+				<div class="back">
+					<img class="card_body" src="assets/IB_logo.png" width="200" />
+					<p class="awesomity_name card_body">Awesomity Lab</p>
+				</div>
+			</div>
+		</div>
+
+		<div style="display: flex; align-items: center; gap: 20px">
+			<input
+				class="range"
+				type="range"
+				value="0"
+				max="0.5"
+				step="0.001"
+				min="0"
+			/>
+			<button class="reload">Reload</button>
+		</div>
+
+		<script src="assets/app.js"></script>
+	</body>
+</html>
